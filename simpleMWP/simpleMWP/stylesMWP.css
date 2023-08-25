@@ -1,0 +1,67 @@
+.windowContentMWP {
+    box-sizing: border-box;
+    border: 1px solid #333;
+    border-radius: 3px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rowWindow {
+    background: rgb(0, 255, 166);
+    background: linear-gradient(90deg, rgba(0, 255, 166, 1) 0%, rgba(0, 194, 255, 1) 77%, rgba(0, 13, 255, 1) 100%);
+}
+
+
+.wrapContentWindow h3 {
+    color: #7ac7f8;
+}
+
+.btnClose {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: transparent;
+    border: 0px;
+    border-radius: 3px;
+    padding: 4px 8px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btnClose:hover {
+    transform: scale(1.2);
+}
+
+.windowContentMWP:hover .btnClose {
+    background: red;
+    color: #fff;
+}
+
+.btnOK,
+.btnCancel,
+.btnOkSuccess{
+    position: absolute;
+    bottom: 3px;
+    right: 73px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 0px;
+    padding: 5px 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 8px;
+}
+
+.btnOK,
+.btnOkSuccess{
+    right: 3px;
+}
+
+.windowContentMWP:hover .btnOK,
+.windowContentMWP:hover .btnCancel {
+    background: green;
+    color: #fff;
+}

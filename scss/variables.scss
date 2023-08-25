@@ -1,0 +1,90 @@
+$h1: 28px;
+$h2: 24px;
+$h3: 20px;
+$h4: 17px;
+$h5: 15px;
+
+$color-text: #4d4949;
+$color-white: #ffffff;
+
+%primary {
+  height: 45px;
+  border-radius: 5px;
+  background-color: #4d4c49;
+}
+%hover {
+  height: 45px;
+  border-radius: 5px;
+  background-color: #4d4c49;
+}
+%disabledWhite {
+  box-sizing: border-box;
+  height: 45px;
+  border: 1px solid #4d4949;
+  //opacity: 0.4;
+  border-radius: 5px;
+  background-color: rgba(252, 246, 246, 0.62);
+}
+%secondary {
+  box-sizing: border-box;
+  height: 45px;
+  border: 1px solid #4d4949;
+  border-radius: 5px;
+}
+
+%disabledBlack {
+  height: 45px;
+  opacity: 0.4;
+  border-radius: 5px;
+  background-color: #4d4c49;
+}
+
+%btn-arrow {
+  box-sizing: border-box;
+  height: 45px;
+  width: 45px;
+  border: 1px solid #4d4949;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+%btn-arrow-hover {
+  box-sizing: border-box;
+  height: 45px;
+  width: 45px;
+  border: 1px solid #4d4949;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px 0 #6d6d6d;
+}
+%arrow-previous {
+  transform: rotate(90deg);
+  margin-bottom: 5px;
+}
+%arrow-next {
+  transform: rotate(270deg);
+  margin-bottom: 4px;
+}
+
+%bg-cards {
+  content: "";
+  height: 60px;
+  width: 101px;
+  position: absolute;
+  margin: 183px 0 0 258px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+%card-link {
+  content: "";
+  height: 60px;
+  width: 101px;
+  background: url(../img/icons/a-icon-attach.svg) no-repeat center,
+  url(../img/icons/a-icon-search-1.svg) no-repeat right center;
+  position: absolute;
+  margin: 31px 0 0 237px;
+}
+
+@mixin w($f) {
+  width: $f;
+}

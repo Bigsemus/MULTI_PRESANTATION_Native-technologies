@@ -1,0 +1,103 @@
+.controlBlock {
+  margin-bottom: 20px;
+
+  &__loader {
+    height: 30px;
+    width: 80%;
+    border: 3px solid rgba(128, 128, 128, 0.47);
+    border-radius: 5px;
+    margin: 20px auto;
+  }
+
+  .loader__filling {
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: springgreen;
+    transition: all 2s;
+    // animation loader effect
+    &--run {
+      width: 100%;
+    }
+
+    &--runBack {
+      width: 0;
+    }
+  }
+
+  &__btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin: 0 auto 30px;
+
+    .btn {
+      border: none;
+      background-color: springgreen;
+      padding: 10px;
+      width: 120px;
+      border-radius: 5px;
+    }
+  }
+}
+
+
+.main {
+
+  &__card_wrap {
+    width: 60%;
+    margin: 0 auto;
+
+
+  .article {
+    display: flex;
+    width: 100%;
+    margin: 15px 0;
+    border: 1px solid rgba(128, 128, 128, 0.47);
+    transition: all 2s;
+    visibility: visible;
+    &--animate{
+      width: 0;
+      visibility: hidden;
+    }
+
+    &__img {
+      margin: 5px;
+      width: 100%;
+      height: 100%;
+      transition: all 2s;
+      // animation img effect
+      &--animate {
+        width: 0;
+        height: 0;
+      }
+    }
+
+    &__content-wrap {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+
+    }
+
+    &__title,
+    &__sub-title {
+      margin: 5px;
+      width: 100%;
+      height: 100%;
+      transition: all 2s;
+
+      // animation effect
+      &--animate,
+      &--animate {
+        width: 0;
+        height: 0;
+        font-size: 0;
+      }
+    }
+
+  }
+  }
+}
+
+
