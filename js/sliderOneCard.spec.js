@@ -1,5 +1,5 @@
-import { TestimonialsSlider } from "./sliderOneCard";
-import { section } from "./section";
+import { TestimonialsSlider } from "./sliderOneCard.js";
+import { section } from "./section.js";
 
 describe('sliderOneCard.js/ render .testimonials__card-block-wrap', () => {
   let Slider;

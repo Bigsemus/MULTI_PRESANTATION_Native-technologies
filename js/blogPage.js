@@ -14,7 +14,7 @@ export const promiseBlog = promiseByHomePage.then(() => {
     return new Promise(resolve => {
       ajaxRequests.sendRequestForModelSite('GET', getValueByLocalStorage())
         .then(result => {
-          let res
+          let res;
           if (result.results[0].original_title === 'UNdefined') {
             resolve(1);
           } else {
@@ -27,7 +27,7 @@ export const promiseBlog = promiseByHomePage.then(() => {
                 res = result.results.length + 2;
                 break;
               default :
-                res = result.results.length
+                res = result.results.length;
             }
             resolve(res);
           }
@@ -295,7 +295,7 @@ export const promiseBlog = promiseByHomePage.then(() => {
               <div class="blog__card-read blog__card-read--sarah">
                 <h2>${textTitle}</h2>
                 <audio class="audio" controls="controls">
-                  <source src="./img/Mariah_Carey—Fantasy.mp3" type="audio/mp3">
+                  <source src="../assets/Paradise.mp3" type="audio/mp3">
                 </audio>
                 <p>${text}</p>
                 <form action="https://www.themoviedb.org/movie/${data.results[1].id}">

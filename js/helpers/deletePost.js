@@ -1,5 +1,3 @@
-//import promise from '../../simpleMWP/simpleMWP/jqueryMWP'
-
 
 let evt;
 
@@ -16,21 +14,21 @@ export function deleterPost(eventMVP) {
   const deletePostBtn = document.querySelector('.blog__card');
   const customEvent = new CustomEvent('modalDelete', { detail: evt })
     deletePostBtn.addEventListener('modalDelete', (event) => {
-    // let storage = window.sessionStorage;
+    let storage = window.sessionStorage;
     if (event.detail.target.classList[2] === 'blog__btn-delete' && !event.detail.target.classList[3]) {
-      // let card = event.detail.path[4];
-      // card.style.transform = 'translate(-100vw,0)';
-      // storage.setItem(card.className, 'none');
-      // setTimeout(() => {
-      //   card.style.display = 'none';
-      // }, 2000);
+      let card = event.detail.target.parentElement.parentElement.parentElement.parentElement;
+      card.style.transform = 'translate(-100vw,0)';
+      storage.setItem(card.className, 'none');
+      setTimeout(() => {
+        card.style.display = 'none';
+      }, 2000);
     } else if (event.detail.target.classList[2] === 'blog__btn-delete' && event.detail.target.classList[3] === 'blog__btn-delete--withoutMedia') {
-      // let card = event.detail.path[3];
-      // card.style.transform = 'translate(-100vw,0)';
-      // storage.setItem(card.className, 'none');
-      // setTimeout(() => {
-      //   card.style.display = 'none';
-      // }, 2000);
+      let card = event.detail.target.parentElement.parentElement.parentElement;
+      card.style.transform = 'translate(-100vw,0)';
+      storage.setItem(card.className, 'none');
+      setTimeout(() => {
+        card.style.display = 'none';
+      }, 2000);
     }
   }, false)
 

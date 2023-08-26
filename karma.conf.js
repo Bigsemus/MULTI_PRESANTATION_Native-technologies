@@ -4,8 +4,8 @@ module.exports = function (config) {
     autoWatch: true,
      frameworks: ['jasmine', 'browserify', 'jasmine-matchers'],
     files: [
-      'js/sliderOneCard.js',
-      'js/sliderOneCard.spec.js'
+      './js/sliderOneCard.js',
+      './js/sliderOneCard.spec.js'
     ],
     browsers: ['Chrome'],
     reporters: ['kjhtml', 'coverage'],
